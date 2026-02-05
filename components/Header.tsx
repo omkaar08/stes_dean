@@ -1,14 +1,6 @@
 "use client";
 
 import { Bell } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import Image from "next/image";
 
 const BRAND_BLUE = "#026892";
@@ -34,29 +26,6 @@ const TopBar = () => {
 
         {/* Right: Controls */}
         <div className="flex items-center gap-3">
-          {/* Year Selector */}
-          <Select defaultValue="2025-2026">
-            <SelectTrigger className="w-[120px] h-9 bg-background border-border text-sm font-medium">
-              <SelectValue placeholder="Year" />
-            </SelectTrigger>
-            <SelectContent className="bg-popover border border-border shadow-md z-50">
-              <SelectItem value="2024-2025">2024-2025</SelectItem>
-              <SelectItem value="2025-2026">2025-2026</SelectItem>
-              <SelectItem value="2026-2027">2026-2027</SelectItem>
-            </SelectContent>
-          </Select>
-
-          {/* Semester Selector */}
-          <Select defaultValue="semester-one">
-            <SelectTrigger className="w-[130px] h-9 bg-background border-border text-sm font-medium">
-              <SelectValue placeholder="Semester" />
-            </SelectTrigger>
-            <SelectContent className="bg-popover border border-border shadow-md z-50">
-              <SelectItem value="semester-one">Semester one</SelectItem>
-              <SelectItem value="semester-two">Semester two</SelectItem>
-            </SelectContent>
-          </Select>
-
           {/* Notifications */}
           <button className="relative p-2 hover:bg-secondary rounded-lg transition-colors">
             <Bell className="w-5 h-5 text-muted-foreground" />
@@ -71,13 +40,9 @@ const TopBar = () => {
               <p className="text-sm font-medium text-foreground">Dean</p>
               <p className="text-xs text-muted-foreground">Administrator</p>
             </div>
-            <Avatar className="h-10 w-10">
-              <AvatarFallback 
-                className="font-bold text-white bg-[#026892]"
-              >
-                D
-              </AvatarFallback>
-            </Avatar>
+            <div className="h-10 w-10 rounded-full bg-[#026892] flex items-center justify-center">
+              <span className="font-bold text-white">D</span>
+            </div>
           </div>
         </div>
       </div>
