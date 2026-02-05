@@ -1,6 +1,6 @@
 'use client'
 
-import { Users, CheckCircle, AlertTriangle, Clock } from "lucide-react";
+import { Users, CheckCircle, AlertTriangle, Clock, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 const BRAND_BLUE = "#026892";
@@ -20,74 +20,74 @@ export default function DashboardContent() {
     });
   };
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Dean Dashboard</h1>
-        <p className="text-muted-foreground font-medium">Welcome back! Here's what's happening across your school.</p>
+    <div className="p-2 sm:p-3 md:p-4 lg:p-6 bg-gray-50 min-h-screen">
+      <div className="mb-3 sm:mb-4 md:mb-6 lg:mb-8">
+        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">Dean Dashboard</h1>
+        <p className="text-xs sm:text-sm text-muted-foreground font-medium">Welcome back! Here's what's happening across your school.</p>
       </div>
       
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-          <div className="flex justify-between items-start mb-3">
-            <p className="text-gray-900 text-sm font-semibold">Faculty Members</p>
-            <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
-              <Users className="w-4 h-4 text-blue-600" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-3 sm:mb-4 md:mb-6 lg:mb-8">
+        <div className="bg-white rounded-lg p-3 sm:p-4 border border-gray-200 shadow-sm">
+          <div className="flex justify-between items-start mb-2 sm:mb-3">
+            <p className="text-gray-900 text-xs sm:text-sm font-semibold">Faculty Members</p>
+            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-blue-50 rounded-lg flex items-center justify-center">
+              <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600" />
             </div>
           </div>
           <div>
-            <p className="text-2xl font-bold text-gray-900 mb-1">45</p>
-            <p className="text-green-700 text-xs font-medium">5% Current Semester</p>
+            <p className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">45</p>
+            <p className="text-green-700 text-[10px] sm:text-xs font-medium">5% Current Semester</p>
           </div>
         </div>
         
-        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-          <div className="flex justify-between items-start mb-3">
-            <p className="text-gray-900 text-sm font-semibold">Enrolled Students</p>
-            <div className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center">
-              <CheckCircle className="w-4 h-4 text-green-600" />
+        <div className="bg-white rounded-lg p-3 sm:p-4 border border-gray-200 shadow-sm">
+          <div className="flex justify-between items-start mb-2 sm:mb-3">
+            <p className="text-gray-900 text-xs sm:text-sm font-semibold">Enrolled Students</p>
+            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-green-50 rounded-lg flex items-center justify-center">
+              <CheckCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-600" />
             </div>
           </div>
           <div>
-            <p className="text-2xl font-bold text-gray-900 mb-1">1,234</p>
-            <p className="text-green-700 text-xs font-medium">3% from last academic year</p>
+            <p className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">1,234</p>
+            <p className="text-green-700 text-[10px] sm:text-xs font-medium">3% from last academic year</p>
           </div>
         </div>
         
-        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-          <div className="flex justify-between items-start mb-3">
-            <p className="text-gray-900 text-sm font-semibold">Pending Approvals</p>
-            <div className="w-8 h-8 bg-orange-50 rounded-lg flex items-center justify-center">
-              <AlertTriangle className="w-4 h-4 text-orange-600" />
+        <div className="bg-white rounded-lg p-3 sm:p-4 border border-gray-200 shadow-sm">
+          <div className="flex justify-between items-start mb-2 sm:mb-3">
+            <p className="text-gray-900 text-xs sm:text-sm font-semibold">Pending Approvals</p>
+            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-orange-50 rounded-lg flex items-center justify-center">
+              <AlertTriangle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-600" />
             </div>
           </div>
           <div>
-            <p className="text-2xl font-bold text-gray-900 mb-1">23</p>
-            <p className="text-orange-700 text-xs font-medium">High priority</p>
+            <p className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">23</p>
+            <p className="text-orange-700 text-[10px] sm:text-xs font-medium">High priority</p>
           </div>
         </div>
         
-        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-          <div className="flex justify-between items-start mb-3">
-            <p className="text-gray-900 text-sm font-semibold">Total Departments</p>
-            <div className="w-8 h-8 bg-purple-50 rounded-lg flex items-center justify-center">
-              <svg className="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="bg-white rounded-lg p-3 sm:p-4 border border-gray-200 shadow-sm">
+          <div className="flex justify-between items-start mb-2 sm:mb-3">
+            <p className="text-gray-900 text-xs sm:text-sm font-semibold">Total Departments</p>
+            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-purple-50 rounded-lg flex items-center justify-center">
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-5 0H3m2 0h3M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
           </div>
           <div>
-            <p className="text-2xl font-bold text-gray-900 mb-1">4</p>
-            <p className="text-green-700 text-xs font-medium">Active departments</p>
+            <p className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">4</p>
+            <p className="text-green-700 text-[10px] sm:text-xs font-medium">Active departments</p>
           </div>
         </div>
       </div>
 
       {/* Bottom Cards Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-6 lg:mb-8">
         {/* Quick Actions */}
-        <div className="bg-card rounded-lg p-6 border border-border shadow-sm">
-          <h3 className="text-lg font-semibold text-foreground mb-6">Quick Actions</h3>
+        <div className="bg-card rounded-lg p-3 sm:p-4 md:p-6 border border-border shadow-sm">
+          <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-3 sm:mb-4 md:mb-6">Quick Actions</h3>
           
           <div className="space-y-3">
             <div className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 cursor-pointer transition-colors flex items-center gap-3">
@@ -125,8 +125,8 @@ export default function DashboardContent() {
         </div>
 
         {/* Today's Schedule */}
-        <div className="bg-card rounded-lg p-6 border border-border shadow-sm">
-          <h3 className="text-lg font-semibold text-foreground mb-6">Today's Schedule</h3>
+        <div className="bg-card rounded-lg p-3 sm:p-4 md:p-6 border border-border shadow-sm">
+          <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-3 sm:mb-4 md:mb-6">Today's Schedule</h3>
           
           <div className="space-y-3">
             <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 flex justify-between items-center">
@@ -155,11 +155,11 @@ export default function DashboardContent() {
         </div>
 
         {/* School Performance */}
-        <div className="bg-card rounded-lg p-6 border border-border shadow-sm">
-          <h3 className="text-lg font-semibold text-foreground mb-6">School Performance</h3>
+        <div className="bg-card rounded-lg p-3 sm:p-4 md:p-6 border border-border shadow-sm">
+          <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-3 sm:mb-4 md:mb-6">School Performance</h3>
           
           <div className="space-y-3">
-            <div className="p-4 bg-green-50 rounded-lg flex justify-between items-center">
+            <div className="p-4 bg-green-50 rounded-lg border border-green-200 flex justify-between items-center">
               <span className="text-foreground font-medium text-sm">Average Attendance</span>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -167,7 +167,7 @@ export default function DashboardContent() {
               </div>
             </div>
             
-            <div className="p-4 bg-red-50 rounded-lg flex justify-between items-center">
+            <div className="p-4 bg-red-50 rounded-lg border border-red-200 flex justify-between items-center">
               <span className="text-foreground font-medium text-sm">Pending Grades</span>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-red-500 rounded-full"></div>
@@ -175,7 +175,7 @@ export default function DashboardContent() {
               </div>
             </div>
             
-            <div className="p-4 bg-orange-50 rounded-lg flex justify-between items-center">
+            <div className="p-4 bg-orange-50 rounded-lg border border-orange-200 flex justify-between items-center">
               <span className="text-foreground font-medium text-sm">Faculty Alerts</span>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
@@ -187,193 +187,202 @@ export default function DashboardContent() {
       </div>
 
       {/* Marks Submission Status and Recent Activity Row */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
         {/* Marks Submission Status */}
-        <div className="bg-card rounded-lg p-6 border border-border shadow-sm">
-          <h3 className="text-lg font-semibold text-foreground mb-6">Marks Submission Status</h3>
+        <div className="bg-card rounded-lg p-3 sm:p-4 border border-border shadow-sm">
+          <h3 className="text-sm sm:text-base font-bold text-foreground mb-3 sm:mb-4">Marks Submission Status</h3>
           
-          <div className="space-y-2">
-            <div className="hover:bg-gray-50 rounded-lg p-2 transition-colors cursor-pointer">
-              <div className="flex justify-between items-center mb-2">
-                <h4 className="font-semibold text-sm text-foreground">Computer Science</h4>
-                <span className="text-sm font-bold text-foreground">98% Complete</span>
-              </div>
-              <div className="w-full bg-secondary rounded-full h-2 mb-1">
-                <div 
-                  className="h-2 rounded-full transition-all duration-300 hover:opacity-80" 
-                  style={{ width: '98%', backgroundColor: BRAND_BLUE }}
-                ></div>
-              </div>
-              <p className="text-xs text-muted-foreground font-medium">156/159 courses submitted</p>
+          <div className="relative">
+            {/* Y-axis labels */}
+            <div className="absolute left-0 top-0 bottom-6 flex flex-col justify-between text-[10px] text-muted-foreground w-6">
+              <span>100%</span>
+              <span>75%</span>
+              <span>50%</span>
+              <span>25%</span>
+              <span>0%</span>
             </div>
             
-            <div className="hover:bg-gray-50 rounded-lg p-2 transition-colors cursor-pointer">
-              <div className="flex justify-between items-center mb-2">
-                <h4 className="font-semibold text-sm text-foreground">Engineering</h4>
-                <span className="text-sm font-bold text-foreground">92% Complete</span>
+            {/* Chart area */}
+            <div className="ml-8">
+              {/* Grid lines */}
+              <div className="relative h-48 border-l-2 border-b-2 border-gray-300">
+                <div className="absolute inset-0 flex flex-col justify-between pr-4">
+                  <div className="border-t border-gray-200"></div>
+                  <div className="border-t border-gray-200"></div>
+                  <div className="border-t border-gray-200"></div>
+                  <div className="border-t border-gray-200"></div>
+                </div>
+                
+                {/* Bars */}
+                <div className="absolute inset-0 flex items-end justify-around px-6 pb-0">
+                  <div className="flex flex-col items-center justify-end" style={{ width: '35px', height: '100%' }}>
+                    <div 
+                      className="w-full rounded-t-lg transition-all duration-500 flex flex-col items-center justify-start pt-1 hover:opacity-80 cursor-pointer" 
+                      style={{ height: '98%', backgroundColor: BRAND_BLUE }}
+                    >
+                      <span className="text-[10px] font-bold text-white">98%</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex flex-col items-center justify-end" style={{ width: '35px', height: '100%' }}>
+                    <div 
+                      className="w-full rounded-t-lg transition-all duration-500 flex flex-col items-center justify-start pt-1 hover:opacity-80 cursor-pointer" 
+                      style={{ height: '92%', backgroundColor: BRAND_BLUE }}
+                    >
+                      <span className="text-[10px] font-bold text-white">92%</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex flex-col items-center justify-end" style={{ width: '35px', height: '100%' }}>
+                    <div 
+                      className="w-full rounded-t-lg transition-all duration-500 flex flex-col items-center justify-start pt-1 hover:opacity-80 cursor-pointer" 
+                      style={{ height: '89%', backgroundColor: BRAND_BLUE }}
+                    >
+                      <span className="text-[10px] font-bold text-white">89%</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex flex-col items-center justify-end" style={{ width: '35px', height: '100%' }}>
+                    <div 
+                      className="w-full rounded-t-lg transition-all duration-500 flex flex-col items-center justify-start pt-1 hover:opacity-80 cursor-pointer" 
+                      style={{ height: '85%', backgroundColor: BRAND_BLUE }}
+                    >
+                      <span className="text-[10px] font-bold text-white">85%</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="w-full bg-secondary rounded-full h-2 mb-1">
-                <div 
-                  className="h-2 rounded-full transition-all duration-300 hover:opacity-80" 
-                  style={{ width: '92%', backgroundColor: BRAND_BLUE }}
-                ></div>
+              
+              {/* X-axis labels */}
+              <div className="flex items-start justify-around px-6 mt-1.5">
+                <div style={{ width: '35px' }}>
+                  <p className="text-[9px] font-medium text-foreground text-center leading-tight">Comp Sci</p>
+                  <p className="text-[8px] text-muted-foreground text-center">156/159</p>
+                </div>
+                <div style={{ width: '35px' }}>
+                  <p className="text-[9px] font-medium text-foreground text-center leading-tight">Engineer</p>
+                  <p className="text-[8px] text-muted-foreground text-center">124/135</p>
+                </div>
+                <div style={{ width: '35px' }}>
+                  <p className="text-[9px] font-medium text-foreground text-center leading-tight">Business</p>
+                  <p className="text-[8px] text-muted-foreground text-center">98/110</p>
+                </div>
+                <div style={{ width: '35px' }}>
+                  <p className="text-[9px] font-medium text-foreground text-center leading-tight">Medicine</p>
+                  <p className="text-[8px] text-muted-foreground text-center">68/80</p>
+                </div>
               </div>
-              <p className="text-xs text-muted-foreground font-medium">124/135 courses submitted</p>
-            </div>
-            
-            <div className="hover:bg-gray-50 rounded-lg p-2 transition-colors cursor-pointer">
-              <div className="flex justify-between items-center mb-2">
-                <h4 className="font-semibold text-sm text-foreground">Business Admin</h4>
-                <span className="text-sm font-bold text-foreground">89% Complete</span>
-              </div>
-              <div className="w-full bg-secondary rounded-full h-2 mb-1">
-                <div 
-                  className="h-2 rounded-full transition-all duration-300 hover:opacity-80" 
-                  style={{ width: '89%', backgroundColor: BRAND_BLUE }}
-                ></div>
-              </div>
-              <p className="text-xs text-muted-foreground font-medium">98/110 courses submitted</p>
-            </div>
-            
-            <div className="hover:bg-gray-50 rounded-lg p-2 transition-colors cursor-pointer">
-              <div className="flex justify-between items-center mb-2">
-                <h4 className="font-semibold text-sm text-foreground">Medicine</h4>
-                <span className="text-sm font-bold text-foreground">85% Complete</span>
-              </div>
-              <div className="w-full bg-secondary rounded-full h-2 mb-1">
-                <div 
-                  className="h-2 rounded-full transition-all duration-300 hover:opacity-80" 
-                  style={{ width: '85%', backgroundColor: BRAND_BLUE }}
-                ></div>
-              </div>
-              <p className="text-xs text-muted-foreground font-medium">68/80 courses submitted</p>
             </div>
           </div>
         </div>
 
         {/* Academic Calendar */}
-        <div className="bg-card rounded-lg p-6 border border-border shadow-sm">
-          <div className="flex justify-between items-center mb-4">
-            <h3 className="text-lg font-semibold text-foreground">Academic Calendar</h3>
-            <div className="flex gap-1">
-              <button 
-                onClick={() => navigateMonth('prev')}
-                className="p-1 hover:bg-secondary rounded text-muted-foreground"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button 
-                onClick={() => navigateMonth('next')}
-                className="p-1 hover:bg-secondary rounded text-muted-foreground"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          
-          <h4 className="text-sm font-medium text-muted-foreground mb-3">
-            {currentDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
-          </h4>
-          
-          {/* Calendar Grid */}
-          <div className="grid grid-cols-7 gap-1 mb-4">
-            {/* Day Headers */}
-            {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, i) => (
-              <div key={i} className="text-center text-xs font-medium text-muted-foreground py-1">{day}</div>
-            ))}
-            
-            {(() => {
-              const today = new Date();
-              const currentMonth = currentDate.getMonth();
-              const currentYear = currentDate.getFullYear();
-              const firstDay = new Date(currentYear, currentMonth, 1);
-              const lastDay = new Date(currentYear, currentMonth + 1, 0);
-              const daysInMonth = lastDay.getDate();
-              const startingDayOfWeek = firstDay.getDay();
-              
-              const days = [];
-              
-              // Previous month days
-              const prevMonth = new Date(currentYear, currentMonth - 1, 0);
-              for (let i = startingDayOfWeek - 1; i >= 0; i--) {
-                days.push(
-                  <div key={`prev-${prevMonth.getDate() - i}`} className="text-center text-xs text-gray-300 py-1 h-7 flex items-center justify-center">
-                    {prevMonth.getDate() - i}
-                  </div>
-                );
-              }
-              
-              // Current month days
-              for (let day = 1; day <= daysInMonth; day++) {
-                const isToday = day === today.getDate() && currentMonth === today.getMonth() && currentYear === today.getFullYear();
-                const hasEvent = day === 15 || day === 20;
-                const isHoliday = day === 25;
-                
-                days.push(
-                  <div key={day} className={`text-center text-xs cursor-pointer transition-all relative h-7 flex items-center justify-center rounded ${
-                    isToday ? 'bg-[#026892] text-white font-bold shadow-md' :
-                    hasEvent ? 'bg-blue-50 text-[#026892] font-semibold hover:bg-blue-100' : 
-                    isHoliday ? 'bg-orange-50 text-orange-600 font-semibold hover:bg-orange-100' : 
-                    'text-foreground hover:bg-gray-100'
-                  }`}>
-                    {day}
-                    {hasEvent && !isToday && (
-                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 rounded-full bg-[#026892]"></div>
-                    )}
-                    {isHoliday && !isToday && (
-                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 rounded-full bg-orange-500"></div>
-                    )}
-                  </div>
-                );
-              }
-              
-              // Next month days to fill grid
-              const totalCells = Math.ceil((startingDayOfWeek + daysInMonth) / 7) * 7;
-              const remainingCells = totalCells - (startingDayOfWeek + daysInMonth);
-              for (let day = 1; day <= remainingCells; day++) {
-                days.push(
-                  <div key={`next-${day}`} className="text-center text-xs text-gray-300 py-1 h-7 flex items-center justify-center">
-                    {day}
-                  </div>
-                );
-              }
-              
-              return days;
-            })()}
-          </div>
-          
-          {/* Events Summary */}
-          <div className="space-y-2 mb-3">
-            <div className="flex items-center justify-between text-xs">
-              <div className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded-full bg-[#026892]"></div>
-                <span className="text-muted-foreground font-medium">Faculty Meeting</span>
-              </div>
-              <span className="text-xs text-muted-foreground">Dec 15</span>
-            </div>
-            <div className="flex items-center justify-between text-xs">
-              <div className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded-full bg-[#026892]"></div>
-                <span className="text-muted-foreground font-medium">Grade Deadline</span>
-              </div>
-              <span className="text-xs text-muted-foreground">Dec 20</span>
-            </div>
-            <div className="flex items-center justify-between text-xs">
-              <div className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded-full bg-orange-500"></div>
-                <span className="text-muted-foreground font-medium">Christmas Holiday</span>
-              </div>
-              <span className="text-xs text-muted-foreground">Dec 25</span>
-            </div>
-          </div>
-          
-          <button className="w-full text-center text-xs text-[#026892] hover:underline font-medium py-2 border-t border-border">
-            View Full Calendar
+        <AcademicCalendar currentDate={currentDate} navigateMonth={navigateMonth} />
+      </div>
+    </div>
+  );
+}
+
+interface CalendarEvent {
+  date: number;
+  title: string;
+  color: string;
+}
+
+interface AcademicCalendarProps {
+  currentDate: Date;
+  navigateMonth: (direction: 'prev' | 'next') => void;
+}
+
+function AcademicCalendar({ currentDate, navigateMonth }: AcademicCalendarProps) {
+  const [hoveredDay, setHoveredDay] = useState<number | null>(null);
+
+  const events: CalendarEvent[] = [
+    { date: 5, title: "Faculty Meeting", color: "bg-blue-400" },
+    { date: 12, title: "Exam Review", color: "bg-green-400" },
+    { date: 15, title: "Grade Submission", color: "bg-amber-400" },
+    { date: 20, title: "Department Seminar", color: "bg-purple-400" },
+    { date: 25, title: "Christmas Holiday", color: "bg-rose-400" },
+  ];
+
+  const getDaysInMonth = (date: Date) => new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+  const getFirstDayOfMonth = (date: Date) => new Date(date.getFullYear(), date.getMonth(), 1).getDay();
+
+  const monthName = currentDate.toLocaleString("default", { month: "long", year: "numeric" });
+  const daysInMonth = getDaysInMonth(currentDate);
+  const firstDay = getFirstDayOfMonth(currentDate);
+  const daysArray = Array.from({ length: daysInMonth }, (_, i) => i + 1);
+  const emptyDays = Array.from({ length: firstDay }, (_, i) => i);
+  const getEventsForDay = (day: number) => events.filter((event) => event.date === day);
+  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return (
+    <div className="bg-white border border-gray-200 rounded-lg shadow-sm h-full flex flex-col">
+      <div className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 flex items-center justify-between border-b border-gray-200">
+        <h2 className="text-xs sm:text-sm md:text-base font-bold text-gray-900">Academic Calendar</h2>
+        <div className="flex items-center gap-0.5 sm:gap-1">
+          <button onClick={() => navigateMonth('prev')} className="p-1 hover:bg-gray-100 rounded-lg transition-colors">
+            <ChevronLeft className="w-4 h-4 text-gray-600" />
           </button>
+          <span className="text-[11px] sm:text-xs font-semibold text-gray-900 w-20 sm:w-24 md:w-28 text-center">{monthName}</span>
+          <button onClick={() => navigateMonth('next')} className="p-1 hover:bg-gray-100 rounded-lg transition-colors">
+            <ChevronRight className="w-4 h-4 text-gray-600" />
+          </button>
+        </div>
+      </div>
+
+      <div className="flex-1 overflow-hidden flex flex-col px-1.5 sm:px-2 md:px-4 py-1.5 sm:py-2 md:py-2.5">
+        <div className="grid grid-cols-7 gap-0.5 sm:gap-1 md:gap-1.5 mb-1 sm:mb-1.5">
+          {dayNames.map((day) => (
+            <div key={day} className="text-center text-[11px] sm:text-xs font-semibold text-gray-600 py-1 sm:py-1.5">
+              <span className="hidden sm:inline">{day}</span>
+              <span className="sm:hidden text-[11px] font-bold">{day.slice(0, 1)}</span>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-7 gap-0.5 sm:gap-1 md:gap-1.5 auto-rows-fr flex-1">
+          {emptyDays.map((_, i) => (
+            <div key={`empty-${i}`} className="bg-gray-50 rounded-lg min-h-[26px] sm:min-h-[42px] md:min-h-[52px]" />
+          ))}
+
+          {daysArray.map((day, index) => {
+            const dayEvents = getEventsForDay(day);
+            const isHovered = hoveredDay === day && dayEvents.length > 0;
+            const col = (index + firstDay) % 7;
+            const row = Math.floor((index + firstDay) / 7);
+
+            return (
+              <div key={day} className="relative min-h-[26px] sm:min-h-[42px] md:min-h-[52px]" onMouseEnter={() => setHoveredDay(day)} onMouseLeave={() => setHoveredDay(null)}>
+                <div className={`border border-gray-200 rounded-lg p-1 sm:p-1.5 text-center flex flex-col transition-all duration-200 h-full ${
+                  dayEvents.length > 0 ? "bg-gradient-to-br from-blue-50 to-indigo-50 hover:shadow-md cursor-pointer" : "bg-white hover:bg-gray-50"
+                }`}>
+                  <div className="text-xs sm:text-sm font-semibold text-gray-900 mb-0.5">{day}</div>
+                  {dayEvents.length > 0 && (
+                    <div className="text-[11px] font-medium text-indigo-600 truncate">{dayEvents[0].title}</div>
+                  )}
+                </div>
+
+                {isHovered && dayEvents.length > 0 && (
+                  <div className={`absolute z-50 bg-white border border-gray-200 rounded-lg shadow-xl p-2.5 w-52 ${
+                    row < 2 ? 'top-full mt-2' : 'bottom-full mb-2'
+                  } ${col >= 4 ? 'right-0' : col <= 2 ? 'left-0' : 'left-1/2 -translate-x-1/2'}`}>
+                    <div className="text-xs font-bold text-gray-900 mb-2 border-b border-gray-200 pb-1.5">
+                      {new Date(currentDate.getFullYear(), currentDate.getMonth(), day).toLocaleDateString("default", { weekday: "long", month: "short", day: "numeric" })}
+                    </div>
+                    <div className="space-y-2">
+                      {dayEvents.map((event, i) => (
+                        <div key={i} className="flex items-start gap-2">
+                          <div className={`w-2 h-2 rounded-full ${event.color} mt-1.5 flex-shrink-0`} />
+                          <div className="text-[11px] text-gray-700">{event.title}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
