@@ -73,12 +73,12 @@ const Sidebar = ({
       {/* Sidebar */}
       <aside
         className={cn(
-          "fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 z-40 transition-transform duration-300 lg:translate-x-0",
+          "fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 z-40 transition-transform duration-300 lg:translate-x-0 pt-4",
           isOpen ? "translate-x-0" : "-translate-x-full",
         )}
       >
         {/* Navigation */}
-        <nav className="p-3 space-y-1 pt-28 sm:pt-16">
+        <nav className="p-3 space-y-1 pt-16">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = item.id === activeTab;

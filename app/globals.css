@@ -24,3 +24,20 @@
 body {
   font-family: 'Inter', system-ui, sans-serif;
 }
+
+select option:checked {
+  background: #E3F2FD !important;
+  color: #026892 !important;
+  font-weight: 500;
+}
+
+select option:hover {
+  background-color: #F3F4F6 !important;
+  color: #374151 !important;
+}
+
+select option {
+  background-color: white;
+  color: #374151;
+  padding: 8px;
+}

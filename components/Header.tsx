@@ -50,14 +50,14 @@ const TopBar = ({ onMenuClick }: TopBarProps) => {
           <div className="flex items-center gap-1 sm:gap-2 lg:gap-3 shrink-0">
             {/* Desktop dropdowns (keep on top row >= sm) */}
             <div className="hidden sm:flex items-center gap-2 lg:gap-3">
-              <select className="px-2 py-1 sm:px-3 sm:py-1.5 lg:px-4 lg:py-2 bg-white border border-gray-300 rounded-lg text-[10px] sm:text-xs lg:text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <select style={{ accentColor: '#026892' }} className="px-2 py-1 sm:px-3 sm:py-1.5 lg:px-4 lg:py-2 bg-white border border-gray-300 rounded-lg text-[10px] sm:text-xs lg:text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#026892]">
                 <option>2024-2025</option>
                 <option>2025-2026</option>
                 <option>2023-2024</option>
               </select>
-              <select className="px-2 py-1 sm:px-3 sm:py-1.5 lg:px-4 lg:py-2 bg-white border border-gray-300 rounded-lg text-[10px] sm:text-xs lg:text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option>Sem 1</option>
-                <option>Sem 2</option>
+              <select style={{ accentColor: '#026892' }} className="px-2 py-1 sm:px-3 sm:py-1.5 lg:px-4 lg:py-2 bg-white border border-gray-300 rounded-lg text-[10px] sm:text-xs lg:text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#026892]">
+                <option>Semester 1</option>
+                <option>Semester 2</option>
               </select>
             </div>
 
@@ -90,14 +90,14 @@ const TopBar = ({ onMenuClick }: TopBarProps) => {
 
         {/* Row 2: Mobile dropdowns (screenshot layout) */}
         <div className="flex sm:hidden items-center gap-3 pb-3">
-          <select className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <select style={{ accentColor: '#026892' }} className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#026892]">
             <option>2024-2025</option>
             <option>2025-2026</option>
             <option>2023-2024</option>
           </select>
-          <select className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <option>Sem 1</option>
-            <option>Sem 2</option>
+          <select style={{ accentColor: '#026892' }} className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#026892]">
+            <option>Semester 1</option>
+            <option>Semester 2</option>
           </select>
         </div>
       </div>

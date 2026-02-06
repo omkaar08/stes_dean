@@ -21,13 +21,13 @@ export default function DashboardContent() {
   };
   return (
     <div className="p-3 sm:p-4 md:p-6 lg:p-8 bg-gray-50">
-      <div className="mb-3 sm:mb-4 md:mb-6 lg:mb-8">
+      <div className="mb-2 sm:mb-3 md:mb-4">
         <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">Dean Dashboard</h1>
         <p className="text-xs sm:text-sm text-muted-foreground font-medium">Welcome back! Here's what's happening across your school.</p>
       </div>
       
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-3 sm:mb-4 md:mb-6 lg:mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 mb-2 sm:mb-3 md:mb-4">
         <div className="bg-white rounded-lg p-3 sm:p-4 border border-gray-200 shadow-sm">
           <div className="flex justify-between items-start mb-2 sm:mb-3">
             <p className="text-gray-900 text-xs sm:text-sm font-semibold">Staff Members</p>
@@ -84,7 +84,7 @@ export default function DashboardContent() {
       </div>
 
       {/* Bottom Cards Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-6 lg:mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 mb-2 sm:mb-3 md:mb-4">
         {/* Quick Actions */}
         <div className="bg-card rounded-lg p-3 sm:p-4 md:p-6 border border-border shadow-sm">
           <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-3 sm:mb-4 md:mb-6">Quick Actions</h3>
@@ -187,7 +187,7 @@ export default function DashboardContent() {
       </div>
 
       {/* Marks Submission Status and Recent Activity Row */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
         {/* Academic Calendar */}
         <AcademicCalendar currentDate={currentDate} navigateMonth={navigateMonth} />
 
@@ -210,10 +210,10 @@ export default function DashboardContent() {
               {/* Grid lines */}
               <div className="relative h-48 border-l-2 border-b-2 border-gray-300">
                 <div className="absolute inset-0 flex flex-col justify-between pr-4">
-                  <div className="border-t border-gray-200"></div>
-                  <div className="border-t border-gray-200"></div>
-                  <div className="border-t border-gray-200"></div>
-                  <div className="border-t border-gray-200"></div>
+                  <div className="border-t border-dashed border-gray-300 opacity-40"></div>
+                  <div className="border-t border-dashed border-gray-300 opacity-40"></div>
+                  <div className="border-t border-dashed border-gray-300 opacity-40"></div>
+                  <div className="border-t border-dashed border-gray-300 opacity-40"></div>
                 </div>
                 
                 {/* Bars */}
