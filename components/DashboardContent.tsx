@@ -260,19 +260,15 @@ export default function DashboardContent() {
               <div className="flex items-start justify-around px-6 mt-1.5">
                 <div style={{ width: '35px' }}>
                   <p className="text-[9px] font-medium text-foreground text-center leading-tight">Comp Sci</p>
-                  <p className="text-[8px] text-muted-foreground text-center">156/159</p>
                 </div>
                 <div style={{ width: '35px' }}>
                   <p className="text-[9px] font-medium text-foreground text-center leading-tight">Engineer</p>
-                  <p className="text-[8px] text-muted-foreground text-center">124/135</p>
                 </div>
                 <div style={{ width: '35px' }}>
                   <p className="text-[9px] font-medium text-foreground text-center leading-tight">Business</p>
-                  <p className="text-[8px] text-muted-foreground text-center">98/110</p>
                 </div>
                 <div style={{ width: '35px' }}>
                   <p className="text-[9px] font-medium text-foreground text-center leading-tight">Medicine</p>
-                  <p className="text-[8px] text-muted-foreground text-center">68/80</p>
                 </div>
               </div>
             </div>
