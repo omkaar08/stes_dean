@@ -4,7 +4,7 @@ const BRAND_BLUE = "#026892";
 
 export default function GradeSubmissions() {
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
+    <div className="p-4 sm:p-6 md:p-8 bg-gray-50">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-foreground">Marks Submission Status</h1>
       </div>

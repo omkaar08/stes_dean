@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex flex-col h-screen bg-gray-50">
       <TopBar onMenuClick={toggleSidebar} />
       <Sidebar
         isOpen={sidebarOpen}
@@ -33,7 +33,7 @@ export default function Home() {
       />
 
       {/* Main Content */}
-      <main className="lg:ml-64 pt-28 sm:pt-16 min-h-screen">
+      <main className="flex-1 lg:ml-64 pt-16 overflow-auto">
         {renderContent()}
         <Footer />
       </main>
