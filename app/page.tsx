@@ -33,7 +33,7 @@ export default function Home() {
       />
 
       {/* Main Content */}
-      <main className="flex-1 lg:ml-64 pt-16 overflow-auto">
+      <main className="flex-1 lg:ml-64 pt-24 sm:pt-16 overflow-auto">
         {renderContent()}
         <Footer />
       </main>

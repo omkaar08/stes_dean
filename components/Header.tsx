@@ -14,12 +14,12 @@ const TopBar = ({ onMenuClick }: TopBarProps) => {
     <div className="fixed top-0 z-50 w-full bg-card border-b border-border">
       <div className="px-2 sm:px-4 lg:px-8">
         {/* Row 1: Mobile top bar (matches screenshot) */}
-        <div className="flex items-center justify-between h-14 sm:h-16">
+        <div className="flex items-center justify-between h-16 sm:h-16">
           {/* Left: Menu + Brand */}
-          <div className="flex items-center gap-2 sm:gap-3 min-w-0 pr-2 max-w-[calc(100%-7.5rem)] sm:max-w-none">
+          <div className="flex items-center gap-2 sm:gap-3 pr-2">
             <button
               onClick={onMenuClick}
-              className="lg:hidden p-1.5 hover:bg-gray-100 rounded-lg"
+              className="lg:hidden p-1.5 hover:bg-gray-100 rounded-lg shrink-0"
               aria-label="Open menu"
               type="button"
             >
@@ -31,23 +31,23 @@ const TopBar = ({ onMenuClick }: TopBarProps) => {
               alt="University of Rwanda Logo"
               width={32}
               height={32}
-              className="rounded-full sm:w-10 sm:h-10"
+              className="rounded-full sm:w-10 sm:h-10 shrink-0"
             />
-            <div className="leading-tight min-w-0">
+            <div className="leading-tight">
               <h1
-                className="text-sm sm:text-base font-bold truncate"
+                className="text-sm sm:text-base font-bold"
                 style={{ color: BRAND_BLUE }}
               >
                 SAMPS UR
               </h1>
-              <p className="hidden sm:block text-[10px] sm:text-xs text-gray-500 truncate">
+              <p className="text-[10px] sm:text-xs text-gray-500">
                 Dean Dashboard
               </p>
             </div>
           </div>
 
           {/* Right: Controls */}
-          <div className="flex items-center gap-1 sm:gap-2 lg:gap-3 shrink-0 min-w-[7.5rem] justify-end">
+          <div className="flex items-center gap-1 sm:gap-2 lg:gap-3 shrink-0">
             {/* Desktop dropdowns (keep on top row >= sm) */}
             <div className="hidden sm:flex items-center gap-2 lg:gap-3">
               <select className="px-2 py-1 sm:px-3 sm:py-1.5 lg:px-4 lg:py-2 bg-white border border-gray-300 rounded-lg text-[10px] sm:text-xs lg:text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -74,7 +74,7 @@ const TopBar = ({ onMenuClick }: TopBarProps) => {
             </button>
 
             {/* User Avatar */}
-            <div className="flex items-center gap-1 sm:gap-2 pl-0.5 shrink-0">
+            <div className="flex items-center gap-1 sm:gap-2 pl-0.5 shrink-0 ml-auto">
               <div className="text-right hidden xl:block">
                 <p className="text-xs font-medium text-foreground">Dr. Rosny</p>
                 <p className="text-[10px] text-muted-foreground">Dean</p>
@@ -84,7 +84,6 @@ const TopBar = ({ onMenuClick }: TopBarProps) => {
                   J
                 </span>
               </div>
-              <ChevronDown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-500" />
             </div>
           </div>
         </div>
