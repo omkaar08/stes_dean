@@ -24,8 +24,8 @@ export default function DashboardContent() {
 
 
       <div className="mb-2 sm:mb-3 md:mb-4">
-        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">Dean Dashboard</h1>
-        <p className="text-xs sm:text-sm text-muted-foreground font-medium">Welcome back! Here's what's happening across your school.</p>
+        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1 sm:mb-2"> welcome back, Dr. Rosny </h1>
+        <p className="text-xs sm:text-sm text-muted-foreground font-medium">Here's what's happening across your school.</p>
       </div>
       
       {/* Stats Cards */}
